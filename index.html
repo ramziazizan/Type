@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tes Kecepatan Mengetik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tes Kecepatan Mengetik (WPM)</h1>
+        
+        <div class="test-area">
+            <div id="quoteDisplay" class="quote-display"></div>
+            
+            <textarea id="quoteInput" class="quote-input" placeholder="Mulai mengetik di sini..." autofocus></textarea>
+        </div>
+
+        <div class="results">
+            <p>Waktu: <span id="timer">0</span> detik</p>
+            <p>WPM: <span id="wpm">0</span></p>
+            <p>Akurasi: <span id="accuracy">0%</span></p>
+        </div>
+        
+        <button id="restartBtn">Mulai Ulang</button>
+
+    </div>
+    
+    <script src="script.js"></script> 
+</body>
+</html>
