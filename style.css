@@ -1,0 +1,95 @@
+/* style.css (Typing Test) */
+
+body {
+    font-family: 'Consolas', monospace; /* Font monospasi untuk mengetik */
+    background-color: #f0f4f8;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+}
+
+h1 {
+    color: #007bff;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+
+.quote-display {
+    text-align: left;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #e9ecef;
+    line-height: 1.6;
+    font-size: 1.1em;
+    user-select: none; /* Cegah teks disorot */
+}
+
+/* Style untuk menandai teks yang benar/salah */
+.correct { color: #28a745; }
+.incorrect { color: red; background-color: #fdd; text-decoration: underline; }
+
+.quote-input {
+    width: 100%;
+    height: 100px;
+    padding: 15px;
+    border: 2px solid #007bff;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1.1em;
+    font-family: inherit;
+    resize: none;
+}
+
+.quote-input:focus {
+    outline: none;
+    border-color: #0056b3;
+}
+
+.results {
+    margin: 25px 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.results p {
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+#timer, #wpm, #accuracy {
+    color: #007bff;
+}
+
+#restartBtn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.2s;
+}
+
+#restartBtn:hover {
+    background-color: #1e7e34;
+  }
